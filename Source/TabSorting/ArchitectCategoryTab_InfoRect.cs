@@ -10,7 +10,7 @@ public static class ArchitectCategoryTab_InfoRect
 {
     public static void Postfix(ref Rect __result)
     {
-        if (!TabSortingMod.Instance.Settings.HideEmptyTabs)
+        if (!TabVisibility.AnyHidingEnabled)
         {
             return;
         }

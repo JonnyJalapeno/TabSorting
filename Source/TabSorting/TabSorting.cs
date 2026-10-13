@@ -762,6 +762,7 @@ public static class TabSorting
     private static void refreshArchitectMenu()
     {
         LogMessage("Sorting-session done");
+        TabVisibility.ClearCache();
 
 
         if (Current.ProgramState != ProgramState.Playing)

@@ -20,17 +20,17 @@ public static class MainTabWindow_Architect_TabRectHeight
     public static void Prefix(ref List<ArchitectCategoryTab> ___desPanelsCached, out List<ArchitectCategoryTab> __state)
     {
         __state = ___desPanelsCached.ToList();
-        if (!TabSortingMod.Instance.Settings.HideEmptyTabs)
+        if (!TabVisibility.AnyHidingEnabled)
         {
             return;
         }
 
-        ___desPanelsCached.RemoveAll(tab => !tab.Visible);
+        ___desPanelsCached.RemoveAll(TabVisibility.ShouldHide);
     }
 
     public static void Postfix(ref List<ArchitectCategoryTab> ___desPanelsCached, List<ArchitectCategoryTab> __state)
     {
-        if (!TabSortingMod.Instance.Settings.HideEmptyTabs)
+        if (!TabVisibility.AnyHidingEnabled)
         {
             return;
         }

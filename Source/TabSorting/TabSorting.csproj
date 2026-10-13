@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputPath>..\..\1.6\Assemblies</OutputPath>
     <TargetFramework>net48</TargetFramework>
@@ -11,7 +11,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.6.4837-beta</Version>
+      <Version>1.6.4871</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -19,6 +19,6 @@
       <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Mlie_Rimworld_VersionFromManifest" Version="*" />
+    <PackageReference Include="Mlie_Rimworld_VersionFromManifest" Version="2022.10.8.223337" />
   </ItemGroup>
 </Project>

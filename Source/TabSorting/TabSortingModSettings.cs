@@ -14,6 +14,8 @@ internal class TabSortingModSettings : ModSettings
 
     public bool HideEmptyTabs;
 
+    public bool HideTechLockedTabs = true;
+
     public Dictionary<string, int> ManualButtonSorting = new();
 
     private List<string> manualButtonSortingKeys;
@@ -112,6 +114,7 @@ internal class TabSortingModSettings : ModSettings
         Scribe_Values.Look(ref SortTabs, "SortTabs");
         Scribe_Values.Look(ref SkipBuiltIn, "SkipBuiltIn");
         Scribe_Values.Look(ref HideEmptyTabs, "HideEmptyTabs");
+        Scribe_Values.Look(ref HideTechLockedTabs, "HideTechLockedTabs", true);
 
         Scribe_Collections.Look(ref categoriesToIgnore, "CategoriesToIgnore");
         Scribe_Collections.Look(ref ManualSorting, "ManualSorting", LookMode.Value, LookMode.Value,

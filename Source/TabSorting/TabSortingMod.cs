@@ -517,6 +517,8 @@ internal class TabSortingMod : Mod
 
                 listingStandard.CheckboxLabeled("TabSorting.HideEmptyTabs.Label".Translate(),
                     ref Settings.HideEmptyTabs, "TabSorting.HideEmptyTabs.Tooltip".Translate());
+                listingStandard.CheckboxLabeled("TabSorting.HideTechLockedTabs.Label".Translate(),
+                    ref Settings.HideTechLockedTabs, "TabSorting.HideTechLockedTabs.Tooltip".Translate());
 
                 listingStandard.Gap();
                 var labelPoint = listingStandard.Label("TabSorting.ManualReset.Label".Translate(), -1F,

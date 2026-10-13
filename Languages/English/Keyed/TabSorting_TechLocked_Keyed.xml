@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add these two keys to your existing Languages/English/Keyed file (or drop this file in next to it). -->
+<LanguageData>
+  <TabSorting.HideTechLockedTabs.Label>Hide tabs locked by tech level</TabSorting.HideTechLockedTabs.Label>
+  <TabSorting.HideTechLockedTabs.Tooltip>Hides architect tabs where every buildable is out of reach because of the colony's tech level (build tech limits, or unfinished research above your tech level). Tabs with orders, zones or any available item stay visible.</TabSorting.HideTechLockedTabs.Tooltip>
+</LanguageData>
